@@ -3,7 +3,7 @@
 import { useState } from "react"
 import "../styles/Dashboard.css"
 import ProjectForm from "./ProjectForm/ProjectForm"
-import RegistrationForm from "./RegistrationForm/registrationform"
+import RegistrationForm from "./RegistrationForm/Registrationform"
 import SchoolAdminPanel from "./SchoolTable"
 import Sidebar from "./Sidebar"
 
