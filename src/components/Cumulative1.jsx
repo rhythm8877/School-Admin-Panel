@@ -7,11 +7,11 @@ const activityOptions = {
     'Girls toilet', 'Boys toilet (Rejuvenation)', 'Girls toilet (Rejuvenation)', 
     'Additional Classrooom', 'Augmentation of EBRC', 'Boundary Wall', 
     'Boundary Wall (Rejuvenation)', 'Dilapidated Classrooms (Primary)', 
-    'Dilapilated Classroom (Upper Primary)', 'Drinking Water Facility', 
+    'Dilapidated Classroom (Upper Primary)', 'Drinking Water Facility', 
     'Electrification', 'Electrification (Rejuvenation)', 'Major Repair', 
     'Major Repair (Rejuvenation)', 'Rain Water Harvesting', 
-    'Upgradation of School (6-8)', 'Dilapilated Building (Primary)', 
-    'Dilapilated Building (Upper Primary)'
+    'Upgradation of School (6-8)', 'Dilapidated Building (Primary)', 
+    'Dilapidated Building (Upper Primary)'
   ],
   'Secondary': [
     'Additional Classroom', 'Art & Craft Room', 'Boundary Wall (Rejuvenation)', 
