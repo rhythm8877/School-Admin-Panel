@@ -1,0 +1,334 @@
+:root {
+  --primary-color: #4a6fdc;
+  --primary-light: #e8eeff;
+  --secondary-color: #f8f9fa;
+  --border-color: #e6e6e6;
+  --text-color: #333;
+  --shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f5f7fa;
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 100%;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  margin-left: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  flex-direction: row;
+  white-space: nowrap;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: var(--primary-color);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  white-space: nowrap;
+  display: inline-block;
+}
+
+.logo-text {
+  font-size: 28px;
+  font-weight: bold;
+  color: var(--primary-color);
+  text-align: center;
+  white-space: nowrap;
+}
+
+.category-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.control-panel-year {
+  margin-bottom: 20px;
+}
+
+.control-panel-filters {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.school-type-selector,
+.year-selector {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.label-text {
+  font-weight: 600;
+  color: var(--primary-color);
+  font-size: 16px;
+  white-space: nowrap;
+}
+
+.school-type-dropdown,
+.year-dropdown,
+select {
+  padding: 8px 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  background-color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 200px;
+  color: #333;
+}
+
+.school-type-dropdown:hover,
+.year-dropdown:hover {
+  border-color: var(--primary-color);
+}
+
+.school-type-dropdown:focus,
+.year-dropdown:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(74, 111, 220, 0.2);
+}
+
+.school-type-dropdown option,
+.year-dropdown option,
+select option {
+  color: #333;
+  background-color: #fff;
+}
+
+.category-btn {
+  padding: 12px 20px;
+  background-color: var(--secondary-color);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  flex: 1;
+  min-width: 120px;
+  text-align: center;
+}
+
+.category-btn:hover {
+  background-color: var(--primary-light);
+}
+
+.category-btn.active {
+  background-color: var(--primary-color);
+  color: white;
+  border-color: var(--primary-color);
+}
+
+.search-container {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.search-container input {
+  width: 100%;
+  padding: 12px 20px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: white;
+  box-shadow: var(--shadow);
+  color: var(--text-color);
+}
+
+.data-container {
+  background: white;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  padding: 20px;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.table-container {
+  overflow-x: auto;
+  margin-top: 20px;
+  width: 100%;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 900px;
+  font-size: 14px;
+}
+
+th, td {
+  padding: 12px 20px;
+  text-align: left;
+  border-bottom: 1px solid var(--border-color);
+  min-width: 120px;
+}
+
+th {
+  background-color: var(--primary-light);
+  font-weight: 600;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.school-name-column {
+  min-width: 250px;
+}
+
+.activity-column {
+  min-width: 200px;
+}
+
+.fund-approved-column {
+  min-width: 100px;
+}
+
+.district-column {
+  min-width: 180px;
+}
+
+td input,
+td select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: white;
+  color: var(--text-color);
+}
+
+td input::placeholder {
+  color: #999;
+}
+
+td input:focus,
+td select:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(74, 111, 220, 0.1);
+}
+
+.section-title {
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: var(--primary-color);
+  text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  header {
+    margin-left: 0;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  .logo, .logo-text {
+    font-size: 20px;
+    white-space: normal;
+  }
+
+  .control-panel-filters {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+    margin-bottom: 20px;
+  }
+
+  .school-type-selector,
+  .year-selector {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .school-type-dropdown,
+  .year-dropdown {
+    width: 100%;
+    min-width: unset;
+  }
+
+  .category-buttons {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+  }
+
+  .category-btn {
+    width: 100%;
+    font-size: 15px;
+  }
+
+  .search-container input {
+    font-size: 15px;
+    padding: 10px 16px;
+  }
+
+  table {
+    min-width: unset;
+    font-size: 12px;
+  }
+
+  th, td {
+    padding: 8px 10px;
+  }
+
+  .container {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 10px;
+  }
+
+  .logo-text,
+  .logo {
+    font-size: 18px;
+  }
+
+  .label-text {
+    font-size: 14px;
+  }
+
+  .section-title {
+    font-size: 16px;
+  }
+
+  .school-type-selector,
+  .year-selector {
+    flex-direction: column;
+    gap: 6px;
+    align-items: flex-start;
+  }
+}
