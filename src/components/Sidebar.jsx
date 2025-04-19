@@ -33,6 +33,18 @@ const Sidebar = ({ activeSection, setActiveSection }) => {
           <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
         </svg>
       )
+    },
+    {
+      id: "Cumulative1",
+      label: "Cumulative 1",
+      icon: (
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M21 12V7H5a2 2 0 0 1-2-2V3"></path>
+          <path d="M3 21V17a2 2 0 0 1 2-2h14"></path>
+          <path d="M18 12h-2"></path>
+          <path d="M8 12h8"></path>
+        </svg>
+      )
     }
   ];
 

@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import "../styles/Dashboard.css"
+import Cumulative1 from "./Cumulative1"
 import ProjectForm from "./ProjectForm/ProjectForm"
 import RegistrationForm from "./RegistrationForm/Registrationform"
 import SchoolAdminPanel from "./SchoolTable"
@@ -18,6 +19,8 @@ const Dashboard = () => {
         return <RegistrationForm />
       case "Project Form":
         return <ProjectForm />
+      case "Cumulative1":
+        return <Cumulative1 />
       default:
         return <SchoolAdminPanel />
     }
