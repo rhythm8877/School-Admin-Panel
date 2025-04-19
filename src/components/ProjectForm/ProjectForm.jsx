@@ -8,21 +8,21 @@ import SuccessAnimation from "../RegistrationForm/SuccessAnimation"
 
 const activityOptions = {
   'Elementary': [
-    'New Goal Primary School', 'Const. of New Building', 'Boys toilet',
-    'Girls toilet', 'Boys toilet (Renovation)', 'Girls toilet (Renovation)',
+    'New Govt. Primary School', 'Const. of New Building', 'Boys toilet',
+    'Girls toilet', 'Boys toilet (Rejuvenation)', 'Girls toilet (Rejuvenation)',
     'Additional Classrooom', 'Augmentation of EBRC', 'Boundary Wall',
-    'Boundary Wall (Renovation)', 'Dilapidated Classrooms (Primary)',
+    'Boundary Wall (Rejuvenation)', 'Dilapidated Classrooms (Primary)',
     'Dilapilated Classroom (Upper Primary)', 'Drinking Water Facility',
-    'Electrification', 'Electrification (Renovation)', 'Major Repair',
-    'Major Repair (Renovation)', 'Rain Water Harvesting',
+    'Electrification', 'Electrification (Rejuvenation)', 'Major Repair',
+    'Major Repair (Rejuvenation)', 'Rain Water Harvesting',
     'Upgradation of School (6-8)', 'Dilapilated Building (Primary)',
     'Dilapilated Building (Upper Primary)'
   ],
   'Secondary': [
-    'Additional Classroom', 'Art & Craft Room', 'Boundary Wall (Renovation)',
-    'Boys Toilet', 'Boys Toilet (Renovation)', 'Girls Toilet',
-    'Girls Toilet (Renovation)', 'Computer Room', 'Drinking Water',
-    'Library Room', 'Major Repair', 'Major Repair (Renovation)',
+    'Additional Classroom', 'Art & Craft Room', 'Boundary Wall (Rejuvenation)',
+    'Boys Toilet', 'Boys Toilet (Rejuvenation)', 'Girls Toilet',
+    'Girls Toilet (Rejuvenation)', 'Computer Room', 'Drinking Water',
+    'Library Room', 'Major Repair', 'Major Repair (Rejuvenation)',
     'New Secondary School (Section 1)', 'New Secondary School (Section 2)',
     'Rain Water Harvesting', 'Ramp', 'Residential Quarter',
     'Integrated Science Lab', 'Dilapidated Building', 'Electrification',
