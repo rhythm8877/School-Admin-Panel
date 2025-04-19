@@ -46,6 +46,7 @@ header {
   color: var(--primary-color);
   text-align: center;
   white-space: nowrap;
+  margin-right: 10.5rem;
 }
 
 .form-container {

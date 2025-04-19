@@ -33,6 +33,7 @@ header {
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
+  margin-left: 27rem;
   flex-direction: row;
   white-space: nowrap;
 }
