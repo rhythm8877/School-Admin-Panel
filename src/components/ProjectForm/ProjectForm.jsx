@@ -59,23 +59,17 @@ function ProjectForm() {
   const [isSubmitted, setIsSubmitted] = useState(false)
 
   const districts = [
-    "Chümoukedima",
     "Dimapur",
-    "Kiphire",
     "Kohima",
+    "Kiphire",
     "Longleng",
-    "Meluri",
     "Mokokchung",
     "Mon",
-    "Niuland",
-    "Noklak",
-    "Peren",
     "Phek",
-    "Shamator",
+    "Peren",
     "Tuensang",
-    "Tseminyü",
     "Wokha",
-    "Zunheboto",
+    "Zunheboto"
   ]
 
   const categories = ["Elementary", "Secondary", "Higher-Secondary", "PM Shri", "NSCBAV", "DA JGUA", "KGBV-IVEBRC"]

@@ -19,24 +19,32 @@ function SchoolRegistrationForm() {
   const [isSubmitted, setIsSubmitted] = useState(false)
 
   const districts = [
-    "Chümoukedima",
     "Dimapur",
-    "Kiphire",
     "Kohima",
+    "Kiphire",
     "Longleng",
-    "Meluri",
     "Mokokchung",
     "Mon",
-    "Niuland",
-    "Noklak",
-    "Peren",
     "Phek",
-    "Shamator",
+    "Peren",
     "Tuensang",
-    "Tseminyü",
     "Wokha",
-    "Zunheboto",
+    "Zunheboto"
   ]
+
+  const ebrcOptions = {
+    "Dimapur": ["Dhansaripar", "Kushiabill", "Medziphema", "Niuland", "UBRC Kuda"],
+    "Kohima": ["L. Khel", "Viswema", "Tseminyu", "Chiephobozou", "Sechü Zubza"],
+    "Kiphire": ["Kiphire", "Pungro", "Seyochung"],
+    "Longleng": ["Longleng", "Tamlu"],
+    "Mokokchung": ["Mokochung Vill.", "Khensa", "Kubolong", "Changtongya", "Mangkolemba", "Watiyim"],
+    "Mon": ["Mon", "Wakching", "Tizit", "Aboi", "Tobu"],
+    "Phek": ["Phek", "Chozuba", "Pfutsero", "Meluri"],
+    "Peren": ["Peren", "Ahthibung", "Tening"],
+    "Tuensang": ["Longkhim", "Shamator", "Noksen", "Hakushang", "Noklak"],
+    "Wokha": ["Wokha", "Sanis", "Bhandari"],
+    "Zunheboto": ["Aghunato", "Akuluto", "Pughoboto", "Satakha", "Zunheboto"]
+  }
 
   const categories = ["Elementary", "Secondary", "Higher-Secondary", "PM Shri", "NSCBAV", "DA JGUA", "KGBV-IVEBRC"]
 
@@ -45,6 +53,8 @@ function SchoolRegistrationForm() {
     setFormData({
       ...formData,
       [name]: value,
+      // Clear EBRC when district changes
+      ...(name === 'district' && { ebrc: '' })
     })
 
     // Clear error when user starts typing
@@ -82,8 +92,8 @@ function SchoolRegistrationForm() {
     }
 
     // Validate eBRC
-    if (!formData.ebrc.trim()) {
-      newErrors.ebrc = "Please enter eBRC"
+    if (!formData.ebrc) {
+      newErrors.ebrc = "Please select an EBRC"
     }
 
     return newErrors
@@ -200,15 +210,21 @@ function SchoolRegistrationForm() {
             <label htmlFor="ebrc">
               eBRC <span className="required">*</span>
             </label>
-            <input
-              type="text"
+            <select
               id="ebrc"
               name="ebrc"
               value={formData.ebrc}
               onChange={handleChange}
               className={errors.ebrc ? "error" : ""}
-              placeholder="Enter eBRC"
-            />
+              disabled={!formData.district}
+            >
+              <option value="">Select EBRC</option>
+              {formData.district && ebrcOptions[formData.district].map((ebrc, index) => (
+                <option key={index} value={ebrc}>
+                  {ebrc}
+                </option>
+              ))}
+            </select>
             {errors.ebrc && <div className="error-message">{errors.ebrc}</div>}
           </div>
 

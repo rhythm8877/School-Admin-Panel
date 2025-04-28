@@ -244,44 +244,6 @@ td select:focus {
   text-align: center;
 }
 
-/* Cumulative1 specific styles */
-.cumulative-table {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 14px;
-}
-
-.cumulative-table th {
-  text-align: center;
-  background-color: var(--primary-light);
-  font-weight: 600;
-  white-space: nowrap;
-  padding: 12px 15px;
-  border-bottom: 1px solid var(--border-color);
-}
-
-.cumulative-table td {
-  padding: 12px 15px;
-  border-bottom: 1px solid var(--border-color);
-  text-align: center;
-}
-
-.cumulative-table td:first-child {
-  width: 60px;
-  text-align: center;
-}
-
-.cumulative-table td:nth-child(2) {
-  min-width: 250px;
-}
-
-.cumulative-table td:nth-child(3),
-.cumulative-table td:nth-child(4),
-.cumulative-table td:nth-child(5),
-.cumulative-table td:nth-child(6) {
-  min-width: 120px;
-}
-
 /* Responsive Styles */
 @media (max-width: 768px) {
   header {
@@ -344,16 +306,6 @@ td select:focus {
   .container {
     padding: 15px;
   }
-
-  .cumulative-table th,
-  .cumulative-table td {
-    padding: 8px 10px;
-    font-size: 13px;
-  }
-
-  .cumulative-table td:nth-child(2) {
-    min-width: 200px;
-  }
 }
 
 @media (max-width: 480px) {
@@ -379,11 +331,5 @@ td select:focus {
     flex-direction: column;
     gap: 6px;
     align-items: flex-start;
-  }
-
-  .cumulative-table th,
-  .cumulative-table td {
-    padding: 6px 8px;
-    font-size: 12px;
   }
 }
